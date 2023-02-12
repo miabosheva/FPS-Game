@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2733F6E2-3769-3613-AD95-0C92E6AE7901}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Mia\test\configuration;C:\Users\Mia\test\LearnOpenGL\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Mia\test\configuration;C:\Users\Mia\test\LearnOpenGL\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Mia\test\configuration;C:\Users\Mia\test\LearnOpenGL\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Mia\test\configuration;C:\Users\Mia\test\LearnOpenGL\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Mia\test\LearnOpenGL\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Mia/test/LearnOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\bin\cmake.exe -SC:/Users/Mia/test/LearnOpenGL -BC:/Users/Mia/test --check-stamp-file C:/Users/Mia/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindASSIMP.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLFW3.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLM.cmake;C:\Users\Mia\test\LearnOpenGL\configuration\root_directory.h.in;C:\Users\Mia\test\LearnOpenGL\configuration\visualstudio.vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Mia\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Mia/test/LearnOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\bin\cmake.exe -SC:/Users/Mia/test/LearnOpenGL -BC:/Users/Mia/test --check-stamp-file C:/Users/Mia/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindASSIMP.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLFW3.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLM.cmake;C:\Users\Mia\test\LearnOpenGL\configuration\root_directory.h.in;C:\Users\Mia\test\LearnOpenGL\configuration\visualstudio.vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Mia\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Mia/test/LearnOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\bin\cmake.exe -SC:/Users/Mia/test/LearnOpenGL -BC:/Users/Mia/test --check-stamp-file C:/Users/Mia/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindASSIMP.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLFW3.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLM.cmake;C:\Users\Mia\test\LearnOpenGL\configuration\root_directory.h.in;C:\Users\Mia\test\LearnOpenGL\configuration\visualstudio.vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Mia\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Mia/test/LearnOpenGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\bin\cmake.exe -SC:/Users/Mia/test/LearnOpenGL -BC:/Users/Mia/test --check-stamp-file C:/Users/Mia/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Users\Mia\Desktop\CMake\cmake-3.23.0-rc3-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeCXXCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeRCCompiler.cmake;C:\Users\Mia\test\CMakeFiles\3.23.0-rc3\CMakeSystem.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindASSIMP.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLFW3.cmake;C:\Users\Mia\test\LearnOpenGL\cmake\modules\FindGLM.cmake;C:\Users\Mia\test\LearnOpenGL\configuration\root_directory.h.in;C:\Users\Mia\test\LearnOpenGL\configuration\visualstudio.vcxproj.user.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Mia\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Mia\test\ZERO_CHECK.vcxproj">
+      <Project>{65F2C4CD-A62D-31BE-913B-065298E0A2D2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__1.1.hello_window.vcxproj">
+      <Project>{F61A407C-E6AA-3201-A9B3-9BEFB4B22DDE}</Project>
+      <Name>1.getting_started__1.1.hello_window</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__1.2.hello_window_clear.vcxproj">
+      <Project>{37CC700F-9D92-392C-B121-58EFBD35DA09}</Project>
+      <Name>1.getting_started__1.2.hello_window_clear</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__2.1.hello_triangle.vcxproj">
+      <Project>{FF8BC771-1699-3EE6-AF83-0F1796A2D81B}</Project>
+      <Name>1.getting_started__2.1.hello_triangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__2.2.hello_triangle_indexed.vcxproj">
+      <Project>{9CC6F0BE-AF23-37B4-9301-F23C69B99230}</Project>
+      <Name>1.getting_started__2.2.hello_triangle_indexed</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__2.3.hello_triangle_exercise1.vcxproj">
+      <Project>{3200773C-E172-35D7-8B16-7A42C48D2085}</Project>
+      <Name>1.getting_started__2.3.hello_triangle_exercise1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__2.4.hello_triangle_exercise2.vcxproj">
+      <Project>{2BAFEE34-FD84-3C84-8E7E-DD6528DEF518}</Project>
+      <Name>1.getting_started__2.4.hello_triangle_exercise2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__2.5.hello_triangle_exercise3.vcxproj">
+      <Project>{9DDF9DC6-2E6D-3299-8546-6435BF5ADBE0}</Project>
+      <Name>1.getting_started__2.5.hello_triangle_exercise3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__3.1.shaders_uniform.vcxproj">
+      <Project>{611C22F0-EFA8-3FE0-9C97-9D6DB87E1E1F}</Project>
+      <Name>1.getting_started__3.1.shaders_uniform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__3.2.shaders_interpolation.vcxproj">
+      <Project>{644C4AED-F736-3624-BF78-0339FEBB84B8}</Project>
+      <Name>1.getting_started__3.2.shaders_interpolation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__3.3.shaders_class.vcxproj">
+      <Project>{932820B4-EE92-3383-905B-3A96AC64CFC2}</Project>
+      <Name>1.getting_started__3.3.shaders_class</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__4.1.textures.vcxproj">
+      <Project>{B151606E-1C45-3371-B0EF-A66C9555B383}</Project>
+      <Name>1.getting_started__4.1.textures</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__4.2.textures_combined.vcxproj">
+      <Project>{7985A62E-5E0D-3175-9DFF-981B4E18D5E7}</Project>
+      <Name>1.getting_started__4.2.textures_combined</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__4.4.textures_exercise2.vcxproj">
+      <Project>{0FED238C-4E96-30B3-88F1-CF4BF0061022}</Project>
+      <Name>1.getting_started__4.4.textures_exercise2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__4.5.textures_exercise3.vcxproj">
+      <Project>{3206ED89-DF31-38FA-BB77-C1ED7E02C699}</Project>
+      <Name>1.getting_started__4.5.textures_exercise3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__4.6.textures_exercise4.vcxproj">
+      <Project>{EF769CC0-E652-3FA3-B09D-6824D6FBDC45}</Project>
+      <Name>1.getting_started__4.6.textures_exercise4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__5.1.transformations.vcxproj">
+      <Project>{38BCA5AD-60C3-3AEB-AEDF-B89ABB02D4AE}</Project>
+      <Name>1.getting_started__5.1.transformations</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__5.2.transformations_exercise2.vcxproj">
+      <Project>{216D6ACC-0F2D-3ECD-B98D-8FBF7B39DD5C}</Project>
+      <Name>1.getting_started__5.2.transformations_exercise2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__6.1.coordinate_systems.vcxproj">
+      <Project>{35DCB833-400C-30D4-BC4B-D88C1343D2F2}</Project>
+      <Name>1.getting_started__6.1.coordinate_systems</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__6.2.coordinate_systems_depth.vcxproj">
+      <Project>{887E390C-41B0-3572-8927-460DDEE9A2FD}</Project>
+      <Name>1.getting_started__6.2.coordinate_systems_depth</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__6.3.coordinate_systems_multiple.vcxproj">
+      <Project>{D42BDC93-C8F5-3B91-AE3E-BB07AAFF78E2}</Project>
+      <Name>1.getting_started__6.3.coordinate_systems_multiple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__7.1.camera_circle.vcxproj">
+      <Project>{6794C389-1BED-3244-A5DB-938D40E82C58}</Project>
+      <Name>1.getting_started__7.1.camera_circle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__7.2.camera_keyboard_dt.vcxproj">
+      <Project>{CA7BA28F-8AC2-32C4-AD78-7AAFED26FF18}</Project>
+      <Name>1.getting_started__7.2.camera_keyboard_dt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__7.3.camera_mouse_zoom.vcxproj">
+      <Project>{0030CCC2-61B7-3D06-9CE0-8E461D176371}</Project>
+      <Name>1.getting_started__7.3.camera_mouse_zoom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\1.getting_started__7.4.camera_class.vcxproj">
+      <Project>{DC772B05-115D-3BCE-AC7D-B0B193E67064}</Project>
+      <Name>1.getting_started__7.4.camera_class</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__1.colors.vcxproj">
+      <Project>{3B520187-4007-31C2-980A-941F68F2AEC6}</Project>
+      <Name>2.lighting__1.colors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__2.1.basic_lighting_diffuse.vcxproj">
+      <Project>{1CBC6B78-7F0B-3433-9A14-DF3B16F4966F}</Project>
+      <Name>2.lighting__2.1.basic_lighting_diffuse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__2.2.basic_lighting_specular.vcxproj">
+      <Project>{56A285F7-A9AB-3F42-A1AB-C261AAE45123}</Project>
+      <Name>2.lighting__2.2.basic_lighting_specular</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__3.1.materials.vcxproj">
+      <Project>{114236B0-CE35-333B-95D0-212420F1DE73}</Project>
+      <Name>2.lighting__3.1.materials</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__3.2.materials_exercise1.vcxproj">
+      <Project>{FAD2E839-3026-3C10-AAF9-F4E9AABE03F6}</Project>
+      <Name>2.lighting__3.2.materials_exercise1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__4.1.lighting_maps_diffuse_map.vcxproj">
+      <Project>{91D85EAF-1345-3611-B6AA-1C04D695AF08}</Project>
+      <Name>2.lighting__4.1.lighting_maps_diffuse_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__4.2.lighting_maps_specular_map.vcxproj">
+      <Project>{E469C902-CA22-3735-A6B3-81AE9520ED7B}</Project>
+      <Name>2.lighting__4.2.lighting_maps_specular_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__4.4.lighting_maps_exercise4.vcxproj">
+      <Project>{39138D51-7C6C-390A-B1B6-AB943E630F5C}</Project>
+      <Name>2.lighting__4.4.lighting_maps_exercise4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__5.1.light_casters_directional.vcxproj">
+      <Project>{FE1CB34F-A265-38E1-A986-A1CA5B354CD1}</Project>
+      <Name>2.lighting__5.1.light_casters_directional</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__5.2.light_casters_point.vcxproj">
+      <Project>{F1D3FDD9-CE11-3ED0-A46A-49B22AA312B1}</Project>
+      <Name>2.lighting__5.2.light_casters_point</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__5.3.light_casters_spot.vcxproj">
+      <Project>{87B7D6AA-307C-374E-8330-C55D3000F8DB}</Project>
+      <Name>2.lighting__5.3.light_casters_spot</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__5.4.light_casters_spot_soft.vcxproj">
+      <Project>{AF999A74-7C23-3B39-9D43-DE66ADAB3471}</Project>
+      <Name>2.lighting__5.4.light_casters_spot_soft</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\2.lighting__6.multiple_lights.vcxproj">
+      <Project>{71DD3588-254A-32CC-B608-EB04D0512196}</Project>
+      <Name>2.lighting__6.multiple_lights</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\3.model_loading__1.model_loading.vcxproj">
+      <Project>{E3F80543-5D39-313B-8199-D1107BB72E72}</Project>
+      <Name>3.model_loading__1.model_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__1.1.depth_testing.vcxproj">
+      <Project>{84335210-5F93-3DAA-A22C-4BFE6DE8B7F8}</Project>
+      <Name>4.advanced_opengl__1.1.depth_testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__1.2.depth_testing_view.vcxproj">
+      <Project>{3A1DF64C-6C33-3660-8FA0-DF3E4F239EF9}</Project>
+      <Name>4.advanced_opengl__1.2.depth_testing_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__10.1.instancing_quads.vcxproj">
+      <Project>{CF95A039-45C0-380A-8BF7-FC609E62ADC2}</Project>
+      <Name>4.advanced_opengl__10.1.instancing_quads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__10.2.asteroids.vcxproj">
+      <Project>{21318972-498B-3E9A-9E33-A39779F511A2}</Project>
+      <Name>4.advanced_opengl__10.2.asteroids</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__10.3.asteroids_instanced.vcxproj">
+      <Project>{7F48B57D-3DF5-3ADD-9D39-A0B4C37CD2F6}</Project>
+      <Name>4.advanced_opengl__10.3.asteroids_instanced</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__11.1.anti_aliasing_msaa.vcxproj">
+      <Project>{79432CF9-8169-38F2-812C-52F71618377C}</Project>
+      <Name>4.advanced_opengl__11.1.anti_aliasing_msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__11.2.anti_aliasing_offscreen.vcxproj">
+      <Project>{7E8ADA9B-A921-3E24-8CEE-C8F361EE1E05}</Project>
+      <Name>4.advanced_opengl__11.2.anti_aliasing_offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__2.stencil_testing.vcxproj">
+      <Project>{5AC03220-BA9B-3608-839D-13F6AECCDBE2}</Project>
+      <Name>4.advanced_opengl__2.stencil_testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__3.1.blending_discard.vcxproj">
+      <Project>{03EB914E-8E71-3278-A670-D0CCBA819965}</Project>
+      <Name>4.advanced_opengl__3.1.blending_discard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__3.2.blending_sort.vcxproj">
+      <Project>{087090A0-4261-3529-BB9D-D789214FC211}</Project>
+      <Name>4.advanced_opengl__3.2.blending_sort</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__5.1.framebuffers.vcxproj">
+      <Project>{F4DC8554-59D1-31F8-A1AF-31ED08880E48}</Project>
+      <Name>4.advanced_opengl__5.1.framebuffers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__5.2.framebuffers_exercise1.vcxproj">
+      <Project>{39367A1F-0FE4-3314-8B08-8C08A74AF792}</Project>
+      <Name>4.advanced_opengl__5.2.framebuffers_exercise1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__6.1.cubemaps_skybox.vcxproj">
+      <Project>{02B730D3-C56B-38E5-B1BA-3A1294495BF8}</Project>
+      <Name>4.advanced_opengl__6.1.cubemaps_skybox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__6.2.cubemaps_environment_mapping.vcxproj">
+      <Project>{9D7A00A2-6898-3FD6-93B3-6CA6979B404D}</Project>
+      <Name>4.advanced_opengl__6.2.cubemaps_environment_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__8.advanced_glsl_ubo.vcxproj">
+      <Project>{1F662C10-FE48-3B3C-A80C-FFD9DA308606}</Project>
+      <Name>4.advanced_opengl__8.advanced_glsl_ubo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__9.1.geometry_shader_houses.vcxproj">
+      <Project>{290C1E36-E372-317B-8D06-AEFD61F48555}</Project>
+      <Name>4.advanced_opengl__9.1.geometry_shader_houses</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__9.2.geometry_shader_exploding.vcxproj">
+      <Project>{E335F89C-D463-3EA1-BF52-A847CD01E6EE}</Project>
+      <Name>4.advanced_opengl__9.2.geometry_shader_exploding</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\4.advanced_opengl__9.3.geometry_shader_normals.vcxproj">
+      <Project>{6EBCCAE4-3736-3CC0-AEEF-A186CF03FB9D}</Project>
+      <Name>4.advanced_opengl__9.3.geometry_shader_normals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__1.advanced_lighting.vcxproj">
+      <Project>{6E2EA2B7-BA67-33ED-8558-998A771E9BDF}</Project>
+      <Name>5.advanced_lighting__1.advanced_lighting</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__2.gamma_correction.vcxproj">
+      <Project>{597AA4A3-5DC1-38F5-8BA1-B187043F763E}</Project>
+      <Name>5.advanced_lighting__2.gamma_correction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__3.1.1.shadow_mapping_depth.vcxproj">
+      <Project>{49E0F5C2-40DD-32B8-8D45-140A938E683A}</Project>
+      <Name>5.advanced_lighting__3.1.1.shadow_mapping_depth</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__3.1.2.shadow_mapping_base.vcxproj">
+      <Project>{01B85A68-85FA-39D6-979A-33595A6A034D}</Project>
+      <Name>5.advanced_lighting__3.1.2.shadow_mapping_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__3.1.3.shadow_mapping.vcxproj">
+      <Project>{D14BD210-91A5-33BD-ACB0-9993992FDB50}</Project>
+      <Name>5.advanced_lighting__3.1.3.shadow_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__3.2.1.point_shadows.vcxproj">
+      <Project>{D4EFF693-8699-3961-8975-A3E5B62EC1BD}</Project>
+      <Name>5.advanced_lighting__3.2.1.point_shadows</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__3.2.2.point_shadows_soft.vcxproj">
+      <Project>{B09C59C5-D03A-38F2-90C9-E80CFCDF391A}</Project>
+      <Name>5.advanced_lighting__3.2.2.point_shadows_soft</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__4.normal_mapping.vcxproj">
+      <Project>{CDC4B45C-702B-39E5-98E5-30484F98E93E}</Project>
+      <Name>5.advanced_lighting__4.normal_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__5.1.parallax_mapping.vcxproj">
+      <Project>{3F314A35-3837-36C7-BABE-587603291214}</Project>
+      <Name>5.advanced_lighting__5.1.parallax_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__5.2.steep_parallax_mapping.vcxproj">
+      <Project>{C4DBC824-39BA-3704-B6CD-0A4F66553E32}</Project>
+      <Name>5.advanced_lighting__5.2.steep_parallax_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__5.3.parallax_occlusion_mapping.vcxproj">
+      <Project>{A16C40A5-7C0B-37F6-B938-B20A1170231D}</Project>
+      <Name>5.advanced_lighting__5.3.parallax_occlusion_mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__6.hdr.vcxproj">
+      <Project>{C1BC6696-2532-33B6-B91A-FD450B969488}</Project>
+      <Name>5.advanced_lighting__6.hdr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__7.bloom.vcxproj">
+      <Project>{C717AB31-7E9F-3BDC-B048-08639FB23DCF}</Project>
+      <Name>5.advanced_lighting__7.bloom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__8.1.deferred_shading.vcxproj">
+      <Project>{CEAD6128-131F-3B30-9912-4936B3A7E90B}</Project>
+      <Name>5.advanced_lighting__8.1.deferred_shading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__8.2.deferred_shading_volumes.vcxproj">
+      <Project>{ED8D5602-DF93-35FA-951F-10674DE7F676}</Project>
+      <Name>5.advanced_lighting__8.2.deferred_shading_volumes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\5.advanced_lighting__9.ssao.vcxproj">
+      <Project>{28BC84EF-2667-3979-838F-21C93B50AB77}</Project>
+      <Name>5.advanced_lighting__9.ssao</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\6.pbr__1.1.lighting.vcxproj">
+      <Project>{19618C5E-97DB-3C31-97A2-D5FD929DB014}</Project>
+      <Name>6.pbr__1.1.lighting</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\6.pbr__1.2.lighting_textured.vcxproj">
+      <Project>{8D8CE549-5CED-3384-BBAC-A63A5AFAD34C}</Project>
+      <Name>6.pbr__1.2.lighting_textured</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\6.pbr__2.1.1.ibl_irradiance_conversion.vcxproj">
+      <Project>{B1F2A121-FD62-3431-A1C9-095F7EB919E2}</Project>
+      <Name>6.pbr__2.1.1.ibl_irradiance_conversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\6.pbr__2.1.2.ibl_irradiance.vcxproj">
+      <Project>{B8CEDE3C-99B8-3455-B623-8FD849CC4175}</Project>
+      <Name>6.pbr__2.1.2.ibl_irradiance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\6.pbr__2.2.1.ibl_specular.vcxproj">
+      <Project>{BAB461CB-BE95-3A87-BA69-029E363FD210}</Project>
+      <Name>6.pbr__2.2.1.ibl_specular</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\6.pbr__2.2.2.ibl_specular_textured.vcxproj">
+      <Project>{13DAE251-6480-3EBC-8D24-AFAEE29D7A1C}</Project>
+      <Name>6.pbr__2.2.2.ibl_specular_textured</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\7.in_practice__1.debugging.vcxproj">
+      <Project>{85A57637-453C-3536-986C-070A2E3CF604}</Project>
+      <Name>7.in_practice__1.debugging</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\7.in_practice__2.text_rendering.vcxproj">
+      <Project>{2566B741-E9A1-3B8A-9EBC-8C0DF368FAE2}</Project>
+      <Name>7.in_practice__2.text_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2020_oit.vcxproj">
+      <Project>{898E00F1-C18F-33F3-8083-3A17CF3C5F37}</Project>
+      <Name>8.guest_2020_oit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2020_skeletal_animation.vcxproj">
+      <Project>{F5C02754-5762-364C-A59E-F40106FE42CA}</Project>
+      <Name>8.guest_2020_skeletal_animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2021_1.scene_1.scene_graph.vcxproj">
+      <Project>{DF977813-DDC8-38D1-8CAA-3EEC38648A69}</Project>
+      <Name>8.guest_2021_1.scene_1.scene_graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2021_1.scene_2.frustum_culling.vcxproj">
+      <Project>{E8B8B1BF-B27D-34E2-86D7-5BEC66E3DFC6}</Project>
+      <Name>8.guest_2021_1.scene_2.frustum_culling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2021_2.csm.vcxproj">
+      <Project>{B98C0E82-EBB8-3479-9A03-47CC2ECEF75E}</Project>
+      <Name>8.guest_2021_2.csm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2021_4.dsa.vcxproj">
+      <Project>{2941F522-2A88-3567-AF9D-D5E1FC69080D}</Project>
+      <Name>8.guest_2021_4.dsa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2022_5.computeshader_helloworld.vcxproj">
+      <Project>{30A243B0-D1C2-3D6D-9EBE-61CA2D8006F9}</Project>
+      <Name>8.guest_2022_5.computeshader_helloworld</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2022_6.physically_based_bloom.vcxproj">
+      <Project>{FA670E95-90D0-3F73-9328-712297025B76}</Project>
+      <Name>8.guest_2022_6.physically_based_bloom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2022_7.area_lights_1.area_light.vcxproj">
+      <Project>{97ED1362-CFA2-308A-96D1-7784E80B84CD}</Project>
+      <Name>8.guest_2022_7.area_lights_1.area_light</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\8.guest_2022_7.area_lights_2.multiple_area_lights.vcxproj">
+      <Project>{73C5ADBD-A31E-32E8-BCF7-7708D0CDF747}</Project>
+      <Name>8.guest_2022_7.area_lights_2.multiple_area_lights</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\GLAD.vcxproj">
+      <Project>{DF911DAF-9637-31A3-B6A1-0F97C82C2D1C}</Project>
+      <Name>GLAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mia\test\STB_IMAGE.vcxproj">
+      <Project>{8FD670B5-4478-32C4-BFC6-BD7F1477D098}</Project>
+      <Name>STB_IMAGE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
