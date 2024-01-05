@@ -1,4 +1,9 @@
 # Prince K : An OpenGL FPS Game
+Gameplay screenshots:
+
+![gameplay-1](https://github.com/miabosheva/FPS-Game/assets/80326100/112ad58e-6d11-4757-b16f-5ea14190a37d)
+
+![gameplay-2](https://github.com/miabosheva/FPS-Game/assets/80326100/8ba58483-f049-4981-8f0b-01d37dffa794)
 
 Постапка за упатство:
 
@@ -13,6 +18,6 @@
 	- Играта започнува кога ќе се испише на конзолата GAME START.
 	- Во случај на закочување, притиснете Enter во 	конзолата.
 
-5. Играта завршува кога на козолата ќе се испише "Game Over"
+5. Играта завршува кога на козолата ќе се испише "Game Over".
 
-6. За гасење на играта притиснете Esc
+6. За гасење на играта притиснете Esc.
